@@ -1,0 +1,26 @@
+		//group admin directory modules together
+		$app->group('/' . $this->admin_dir_path, function() use ($app) {
+
+			//default module path
+			$app->map('/', function() {
+				echo 'default admin module';
+			})->via('GET', 'POST');
+
+			$app->map('/:module(/(:params+))', function($module = null, $params = array()) {
+				var_dump($module);
+				var_dump($params);
+				echo 'admin modules';
+			})->via('GET', 'POST');
+
+		});
+
+		//load normal modules
+		$app->map('/', function() {
+			echo 'default index module';
+		})->via('GET', 'POST');
+
+		$app->map('/:module(/(:params+))', function($module = null, $params = array()) {
+			var_dump($module);
+			var_dump($params);
+			echo 'other modules';
+		})->via('GET', 'POST');

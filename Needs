@@ -1,0 +1,13 @@
+Needs
+------
+- Way to re-route everything
+- figure out how we want the models to be loaded
+	- do we want auto loading or the option for the developer
+	to set everything up
+- or do we want to give the developer the option to
+setup the routes themselves.
+
+
+------- READ ONLY THIS FOR NOW -----------
+
+- Allow users to set their own routes through slim overriding everything

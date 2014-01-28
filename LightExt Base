@@ -1,0 +1,12 @@
+LightExt Base
+-------------
+- htaccess blocked basic json settings file
+	- only store basic settings like: default style, enabled plugins, etc...
+- Basic Authentication System
+	- Login, Register, Forgot Password
+- Easy Modular Plugin System
+	- The Option to combine frontend and backend functionality at the same time
+	allowing you to enable/disable it at the same time.  Grouping front/backend
+	sections together.
+- Easy to style
+	- Option to choose which style you want as the base.
